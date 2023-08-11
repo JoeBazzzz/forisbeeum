@@ -1,0 +1,70 @@
+.App {
+  text-align: center;
+}
+
+
+.App-header {
+  background-color: gray;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(14, 187, 80);
+}
+
+.Button {
+  background-color: red;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+
+.Popup {
+  background: green;
+  margin-top: 10vh;
+  border-radius: 2vh;
+  padding: 3vh;
+}
+
+.hidden {
+  display: none;
+}
+
+
+.Header-container{
+  position: absolute;
+  width: 100vw;
+  height: 10vh;
+  background-color: aquamarine;
+  color: black;
+  top: 0px;
+  left: 0px;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 31% 23% 23% 23%;
+}
+
+.Header-container > *{
+  user-select: none;
+}
+.Header-link:hover{
+  
+  background-color: rgb(90, 185, 154);
+
+
+}
+
+.Header-title{
+  font-size: 6vh;
+  font-weight: bold;
+}
+
+.Header-link{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5vh;
+}
