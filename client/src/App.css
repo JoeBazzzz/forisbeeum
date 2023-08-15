@@ -1,42 +1,18 @@
 .App {
   text-align: center;
-}
-
-
-.App-header {
   background-color: gray;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: rgb(14, 187, 80);
+  color: aquamarine;
 }
-
-.Button {
-  background-color: red;
-  padding: 10px;
-  border-radius: 20px;
-}
-
-
-.Popup {
-  background: green;
-  margin-top: 10vh;
-  border-radius: 2vh;
-  padding: 3vh;
-}
-
-.hidden {
-  display: none;
-}
-
 
 .Header-container{
-  position: absolute;
+  position: fixed;
   width: 100vw;
   height: 10vh;
+
   background-color: aquamarine;
   color: black;
   top: 0px;
@@ -50,10 +26,7 @@
   user-select: none;
 }
 .Header-link:hover{
-  
   background-color: rgb(90, 185, 154);
-
-
 }
 
 .Header-title{
@@ -67,4 +40,99 @@
   align-items: center;
   justify-content: center;
   font-size: 5vh;
+}
+
+.Footer-container{
+  position: fixed;
+  width: 100vw;
+  height: 10vh;
+
+  background-color: aquamarine;
+  color: black;
+  bottom: 0px;
+  left: 0px;
+
+}
+
+
+.grid{
+  display: grid;
+  margin-top: 10vh;
+  grid-template-columns: 30vw 50vw 15vw;
+  grid-gap: 1vw;
+  row-gap: 1vh;
+}
+
+
+.hidden {
+  display: none;
+}
+
+
+.Login{
+  background-color: rgb(71, 71, 71);
+  padding: 10px;
+  border-radius: 10px;
+  border: 10px;
+  width: 250px;
+  
+}
+
+.Logintext{
+  font-size: 6vh;
+  width: 10wv;
+}
+
+.logintext{
+  font-size: 2vh;
+  
+}
+
+.Submit{
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius: 10px;
+  color: rgb(1, 10, 7);
+  font-size: medium;
+  background-color: white;
+}
+
+.Submit:hover{
+  background-color: rgba(185, 252, 229, 0.411);
+}
+
+.rememberme{
+  font-size: 20px;
+}
+.rememberbox{
+  width: 15px;
+  height: 15px;
+}
+
+.hello{
+  position: relative;
+  display: inline-block;
+  width: 160px;
+  height: 50px;
+
+}
+.dropdown {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.hello:hover {
+  color: blue;
+  
+}
+
+.hello:hover .dropdown{
+  display:block;
 }
