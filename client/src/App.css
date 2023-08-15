@@ -9,8 +9,8 @@
 }
 
 .Header-container{
-  position: fixed;
-  width: 100vw;
+  position: relative;
+  width: 100%;
   height: 10vh;
 
   background-color: aquamarine;
@@ -43,24 +43,24 @@
 }
 
 .Footer-container{
-  position: fixed;
+  position: bottom;
   width: 100vw;
   height: 10vh;
 
   background-color: aquamarine;
   color: black;
-  bottom: 0px;
-  left: 0px;
+  bottom:auto;
+  left: 0vw;
 
 }
 
 
 .grid{
   display: grid;
-  margin-top: 10vh;
-  grid-template-columns: 30vw 50vw 15vw;
-  grid-gap: 1vw;
-  row-gap: 1vh;
+  margin-top: 10px;
+  grid-template-columns: 30% 50% 15%;
+  grid-gap: 1%;
+  row-gap: 1%;
 }
 
 
@@ -75,6 +75,8 @@
   border-radius: 10px;
   border: 10px;
   width: 250px;
+  height: 350px;
+  position: sticky;
   
 }
 
@@ -100,7 +102,7 @@
 }
 
 .Submit:hover{
-  background-color: rgba(185, 252, 229, 0.411);
+  background-color: aquamarine
 }
 
 .rememberme{
@@ -135,4 +137,18 @@
 
 .hello:hover .dropdown{
   display:block;
+}
+
+.Body {
+
+  color: black;
+  background-color: lightgray;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.Body-text{
+  font-size: 15px;
+  text-align: left;
+
 }

@@ -3,6 +3,7 @@ import Header from './ui/components/Header'
 import Login from './ui/components/Login'
 import Dropdown from './ui/components/Dropdown'
 import Footer from './ui/components/Footer'
+import Body from './ui/components/Body'
 
 function App() {
 
@@ -13,10 +14,10 @@ function App() {
       <header className="App-header">
         <Header/>
       </header>
-      <br></br>
+      
      <div className="grid">
         <Login/>
-        <br></br>
+        <Body/>
         <Dropdown/>
       </div>
       <footer className='footer'>
